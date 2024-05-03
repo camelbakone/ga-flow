@@ -1,0 +1,15 @@
+{
+  "routes": [
+    { "src": "/css/bootstrap.min.css", "dest": "/css/bootstrap.min.css" },
+    { "src": "/css/loading.css", "dest": "/css/loading.css" },
+    { "src": "/css/main.css", "dest": "/css/main.css" },
+    { "src": "/css/style.css", "dest": "/css/style.css" },
+    { "src": "/css/swiper-bundle.min.css", "dest": "/css/swiper-bundle.min.css" },
+    { "src": "/css/tex-emoji-styles.css", "dest": "/css/tex-emoji-styles.css" },
+    { "src": "/css/video-js", "dest": "/css/video-js" },
+    { "src": "/css/vjs-styles", "dest": "/css/vjs-styles" },
+    { "src": "/js/script.js", "dest": "/js/script.js" },
+    { "src": "/page", "dest": "/page.html" }
+  ]
+  
+}

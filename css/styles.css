@@ -1,0 +1,271 @@
+/* Contenido de style.css */
+
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+@keyframes parpadeo {
+    0% {
+      opacity: 0;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  #BOLAROJA {
+    animation: parpadeo 1s infinite;
+  }
+  
+  
+  .svg-overlay {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    width: 12%;
+    height: 51%;
+    z-index: 9999;
+  }
+
+
+  .loader {
+    width: 10px;
+    height: 10px;
+    border: 7px solid rgb(94, 255, 0);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+  }
+  .loader:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 6px solid rgb(95, 248, 6);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+  }
+  
+  @keyframes scaleUp {
+    0% { transform: translate(-50%, -50%) scale(0) }
+    60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+  }
+  @keyframes pulse {
+    0% , 60% , 100%{ transform:  scale(1) }
+    80% { transform:  scale(1.2)}
+  }
+
+
+
+  
+  .shadow__btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn {
+    background: rgb(253,1,49);
+    box-shadow: 0 0 10px rgb(253,1,49);
+  }
+  
+  .shadow__btn:hover {
+    box-shadow: 0 0 5px rgb(253,1,49),
+                0 0 25px rgb(253,1,49),
+                0 0 50px rgb(253,1,49),
+                0 0 100px rgb(253,1,49);
+  }
+
+
+  
+  .shadow__btn1 {
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+  }
+  
+  .shadow__btn1 {
+    background: rgb(253,1,49);
+    box-shadow: 0 0 10px rgb(253,1,49);
+  }
+  
+  .shadow__btn1:hover {
+    box-shadow: 0 0 5px rgb(253,1,49),
+                0 0 25px rgb(253,1,49),
+                0 0 50px rgb(253,1,49),
+                0 0 100px rgb(253,1,49);
+  }
+
+
+  .text-shadow-description {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+  }
+
+  .text-shadow-name {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+
+  @keyframes movimientoInfinito {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.boton-movimiento-infinito {
+    animation: movimientoInfinito 1s infinite;
+}
+
+  
+  
+ /*Botones de ultima pagina NEXT*/
+
+ .btn-conteiner {
+  display: flex;
+  justify-content: center;
+  --color-text: #ffffff;
+  --color-background: rgb(253,1,49);
+  --color-outline: #ff145b80;
+  --color-shadow: #00000080;
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  padding: 1px 10px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: 1s;
+  border-radius: 10px;
+  box-shadow: 0 0 0.2em 0 var(--color-background);
+}
+
+.btn-content:hover, .btn-content:focus {
+  transition: 0.5s;
+  -webkit-animation: btn-content 1s;
+  animation: btn-content 1s;
+  outline: 0.1em solid transparent;
+  outline-offset: 0.2em;
+  box-shadow: 0 0 0.4em 0 var(--color-background);
+}
+
+.btn-content .icon-arrow {
+  transition: 0.5s;
+  margin-right: 0px;
+  transform: scale(0.6);
+}
+
+.btn-content:hover .icon-arrow {
+  transition: 0.5s;
+  margin-right: 25px;
+}
+
+.icon-arrow {
+  width: 18px;
+  margin-left: 15px;
+  position: relative;
+  top: 6%;
+}
+  
+/* SVG */
+#arrow-icon-one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: var(--color-background);
+  }
+
+  100% {
+    fill: white;
+  }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+@keyframes btn-content {
+  0% {
+    outline: 0.2em solid var(--color-background);
+    outline-offset: 0;
+  }
+}
+
+/*End Botones next*/
+
+

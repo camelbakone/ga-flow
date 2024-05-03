@@ -1,0 +1,80 @@
+/* Archivo vjs-styles.css */
+
+/* Estilos por defecto */
+.video-js {
+    width: 300px;
+    height: 150px;
+}
+
+.vjs-fluid:not(.vjs-audio-only-mode) {
+    padding-top: 56.25%;
+}
+
+/* Estilos de dimensiones específicas */
+.video-148-dimensions {
+    width: 608px;
+    height: 1080px;
+}
+
+.video-148-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+    padding-top: 177.63157894736844%;
+}
+
+.video-64-dimensions {
+    width: 405px;
+    height: 720px;
+}
+
+.video-64-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+    padding-top: 177.77777777777777%;
+}
+
+.video-144-dimensions {
+    width: 684px;
+    height: 1216px;
+}
+
+.video-144-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+    padding-top: 177.77777777777777%;
+}
+
+.video-136-dimensions {
+    width: 480px;
+    height: 854px;
+}
+
+.video-136-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+    padding-top: 177.91666666666666%;
+}
+
+.video-142-dimensions {
+    width: 405px;
+    height: 720px;
+}
+
+.video-142-dimensions.vjs-fluid:not(.vjs-audio-only-mode) {
+    padding-top: 177.77777777777777%;
+}
+
+
+/*tex-css se movio todo el css del body a este apartado
+cabe destacar que pertenece a la clase text-css*/
+
+
+/* Archivo wp-emoji-styles.css */
+img.wp-smiley,
+img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+
+
+
